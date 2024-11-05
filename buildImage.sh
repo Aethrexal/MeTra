@@ -1,1 +1,7 @@
-pack build metra --path . --clear-cache --tag "ghcr.io/aethrexal/metra:$1" --builder heroku/builder:24
+if [ -z "$1" ]; then
+    echo "Error: Argument is empty"
+    exit 1
+fi
+
+
+docker build -t metrea:"$1" .
