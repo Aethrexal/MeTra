@@ -11,9 +11,15 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "@nuxt/icon": "^1.6.1",
     "@nuxtjs/supabase": "^1.4.1",
+    "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.14.0",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@iconify-json/tabler": "^1.2.7",
+    "daisyui": "^4.12.14"
   }
 }
