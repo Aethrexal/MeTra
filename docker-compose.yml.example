@@ -1,14 +1,7 @@
-version: "3.0"
-
 services:
   metra:
-    image: ghcr.io/aethrexal/metra
+    image: aethrexal/metra:latest
+    container_name: metra
     ports:
       - "8080:3000"
-    environment:
-      - HOST=0.0.0.0
-      - NUXT_PUBLIC_SUPABASE_URL=
-      - NUXT_PUBLIC_SUPABASE_KEY=
-      - NUXT_PUBLIC_TVDB_URL=
-      - NUXT_TVDB_API_KEY=
-      - NUXT_PUBLIC_REGISTRATION_ENABLED=true
+    env_file: .env
