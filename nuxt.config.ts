@@ -7,12 +7,14 @@ export default defineNuxtConfig({
     preset: "node-server",
   },
   runtimeConfig: {
-    tvdbApiKey: "", // Overridden by NUXT_TVDB_API_KEY
+    tvdbApiKey: process.env.NUXT_TVDB_API_KEY,
+    supabaseUrl: process.env.SUPABASE_URL,
+    supabaseKey: process.env.SUPABASE_KEY,
     public: {
       websiteTitle: "MeTra",
       version: "0.0.1",
-      registraionEnabled: "", // Overridden by NUXT_PUBLIC_REGISTRATION_ENABLED
-      tvdbUrl: "", // Overridden by NUXT_PUBLIC_TVDB_URL
+      registraionEnabled: process.env.NUXT_PUBLIC_REGISTRATION_ENABLED,
+      tvdbUrl: process.env.NUXT_PUBLIC_TVDB_URL,
     },
   },
 });
