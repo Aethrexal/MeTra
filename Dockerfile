@@ -40,4 +40,4 @@ ENV NODE_ENV=production
 EXPOSE 3000
 
 # Start the application
-ENTRYPOINT ["nuxt", "start"]
+CMD ["node","/app/server/index.mjs"]
