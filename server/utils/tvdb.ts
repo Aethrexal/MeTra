@@ -34,7 +34,7 @@ export const tvdb = {
   getSerie: async (id: string) => {
     if (!token) await authenticate();
 
-    return await $fetch(`${url}/series/${id}`, {
+    return await $fetch(`${url}/series/${id}/extended`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ export const tvdb = {
   getMovie: async (id: string) => {
     if (!token) await authenticate();
 
-    return await $fetch(`${url}/movies/${id}`, {
+    return await $fetch(`${url}/movies/${id}/extended`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

@@ -5,7 +5,9 @@ export default defineEventHandler(async (event) => {
 
   try {
     const result = await tvdb.search(query.term);
-    return result.data;
+    return result.data.filter(
+      (item) => item.type === "series" || item.type === "movie",
+    );
   } catch (error) {
     console.error("Error while searching TVDB", error);
     return { error: "Failed to search TVDB" };
