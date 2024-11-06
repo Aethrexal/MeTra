@@ -12,7 +12,7 @@ A self-hostable media tracking application built with Nuxt 3, Supabase, and TVDB
 
 ## Prerequisites
 
-- Node.js (v14 or later)
+- Node.js (v18 or newer)
 - Docker and Docker Compose
 - Supabase account
 - TVDB API key
