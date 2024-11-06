@@ -12,7 +12,7 @@ const firstSearch = ref(true);
 
 const search = async () => {
   // TODO: Get from the database first then replace the tvdb results with the local ones if any
-  // TODO: Seasons are returning double amount of what they should be (It's because it's doing absolute order, dvd order and aired order)
+  // TODO: Seasons are returning double amount or wrong of what they should be (It's because it's doing absolute order, dvd order and aired order)
   // TODO: Add genres to the modal
   // TODO: Some cooldown for the search
 

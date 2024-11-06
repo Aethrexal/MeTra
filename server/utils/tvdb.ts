@@ -34,12 +34,30 @@ export const tvdb = {
   getSerie: async (id: string) => {
     if (!token) await authenticate();
 
-    return await $fetch(`${url}/series/${id}/extended`, {
+    //return await $fetch(`${url}/series/${id}/extended`, {
+    //  method: "GET",
+    //  headers: {
+    //    Authorization: `Bearer ${token}`,
+    //  },
+    //});
+
+    const res = await $fetch(`${url}/series/${id}/extended`, {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
       },
     });
+
+    let seasons = res.data.seasons || [];
+
+    seasons = seasons.filter(
+      (season) => season.type.type.toLowerCase() === "dvd",
+    );
+
+    console.log(seasons);
+
+    res.data.seasons = seasons;
+    return res;
   },
 
   getMovie: async (id: string) => {
