@@ -1,75 +1,66 @@
-# Nuxt Minimal Starter
+# Media Tracking App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A self-hostable media tracking application built with Nuxt 3, Supabase, and TVDB API integration.
+
+## Features
+
+- Search and track TV shows and movies
+- User authentication and personalized watchlists
+- Integration with TVDB API for up-to-date media information
+- Responsive design for both mobile and desktop use
+- Docker support for easy deployment
+
+## Prerequisites
+
+- Node.js (v14 or later)
+- Docker and Docker Compose
+- Supabase account
+- TVDB API key
 
 ## Setup
 
-Make sure to install dependencies:
-
+1. Clone the repository:
 ```bash
-# npm
+git clone https://github.com/yourusername/media-tracking-app.git
+cd media-tracking-app
+```
+
+2. Install dependencies:
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
+3. Set up environment variables:
+Rename .env.example to .env and set the variables.
 
-## Development Server
+4. Set up Supabase:
+- Create a new project in Supabase
+- Run the provided SQL scripts to set up the necessary tables and functions
 
-Start the development server on `http://localhost:3000`:
+## Running the Application
+
+### Development
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+### Production
 
-Build the application for production:
-
+Using Docker:
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+docker-compose up -d
 ```
 
-Locally preview production build:
+## Usage
+1. Register a new account or log in
+2. Search for TV shows or movies
+3. Add items to your watchlist
+4. Update watch status and ratings
 
-```bash
-# npm
-npm run preview
+## Contributing
 
-# pnpm
-pnpm preview
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-# yarn
-yarn preview
+### License
 
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Aethrexal/MeTra/blob/main/LICENSE) file for details.
