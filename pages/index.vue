@@ -1,3 +1,3 @@
 <template>
-  <Navigation />
+  <p>Hello World</p>
 </template>
