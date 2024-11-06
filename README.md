@@ -21,8 +21,8 @@ A self-hostable media tracking application built with Nuxt 3, Supabase, and TVDB
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/media-tracking-app.git
-cd media-tracking-app
+git clone https://github.com/Aethrexal/MeTra.git
+cd MeTra
 ```
 
 2. Install dependencies:
