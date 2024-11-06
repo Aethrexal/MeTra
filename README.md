@@ -30,8 +30,7 @@ cd MeTra
 npm install
 ```
 3. Set up environment variables:
-
-Rename .env.example to .env and set the variables.
+- Rename .env.example to .env and set the variables.
 
 4. Set up Supabase:
 - Create a new project in Supabase
